@@ -20,7 +20,7 @@
 
 body {
   font-family: var(--fuentePrincipal);
-  background: linear-gradient(to bottom, #36013F, #180028);
+  background-color: #2c003a;
   color: var(--colorCinco);
   line-height: 1.6;
 }
