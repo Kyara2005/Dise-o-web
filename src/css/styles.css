@@ -1,0 +1,26 @@
+
+/*Variables de los colores*/
+
+:root {
+  --colorUno: #ffffff;         /* Blanco - texto y fondos claros */
+  --colorDos: #d600a8;         /* Rosa fuerte - acentos y botones */
+  --colorTres: #00cfff;        /* Azul claro - bordes e íconos */
+  --colorCuatro: #1a002a;      /* Fondo oscuro base */
+  --colorCinco: #e1e1e1;       /* Texto en inputs, color claro */
+
+  --fuentePrincipal: "Roboto", sans-serif;
+  --fuenteSecundaria: "Orbitron", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  background: linear-gradient(to bottom, #36013F, #180028);
+  color: var(--colorCinco);
+  line-height: 1.6;
+}
