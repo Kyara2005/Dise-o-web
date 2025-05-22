@@ -1,0 +1,133 @@
+.header {
+  background-color: var(--colorCuatro);
+  padding: 1rem;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--colorUno);
+  cursor: pointer;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: var(--colorUno);
+  font-weight: 500;
+}
+
+.header__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header__logo h1 {
+  font-family: var(--fuenteSecundaria);
+  font-size: 6rem;
+  color: var(--colorUno);
+}
+
+.logo-highlight {
+  color: var(--colorDos);
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__left {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.header__left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.header__text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--colorUno);
+  text-shadow: 1px 1px 4px #000;
+}
+
+.header__right {
+  flex: 1 1 45%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--colorUno);
+}
+
+.header__right h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__right p a {
+  color: var(--colorDos);
+  text-decoration: none;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--colorUno);
+  color: var(--colorCuatro);
+  border-radius: 4px;
+}
+
+.form-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--colorDos);
+  color: var(--colorUno);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
