@@ -12,18 +12,52 @@
     <link rel="shortcut icon" href="logo-vibe-u.png" type="image/x-icon">
 </head>
 <body>
-  <header class="container">
-  <nav class="navbar__container">
-    <h1 class="navbar__logo">VIBE-<span class="navbar__logo--primary">U</span></h1>
-    <ul>
-      <li><a href="#">Sobre nosotros</a></li>
-      <li><a href="#">Opiniones</a></li>
-      <li><a href="#">Crear cuenta</a></li>
-      <li><a href="#">Iniciar sesión</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="header">
+    <div class="header__top">
+      <button class="menu-toggle">&#9776;</button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Opiniones</a></li>
+          <li><a href="#">Crear Cuenta</a></li>
+          <li><a href="#">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
 
+    <div class="header__main">
+      <div class="header__logo">
+        <h1>VIBE-<span class="logo-highlight">U</span></h1>
+      </div>
+
+      <div class="header__content">
+        <div class="header__left"
+          <p class="header__text"><strong>Accede y conoce a<br>estudiantes como tú.</strong></p>
+        </div>
+
+        <div class="header__right">
+          <h2>INICIA SESIÓN</h2>
+          <p>¿No tienes una cuenta? <a href="#">Regístrate aquí.</a></p>
+
+          <form>
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" name="user">
+
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass">
+
+            <div class="form-links">
+              <a href="#">Recuerda mi contraseña.</a>
+              <a href="#">¿Problemas para iniciar sesión?</a>
+            </div>
+
+            <button type="submit">INICIAR SESIÓN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
 
 </body>
+
 </html>
