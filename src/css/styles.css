@@ -207,6 +207,18 @@ form textarea::placeholder {
 .header__right p a:hover {
   text-decoration: underline;
 }
+/* Animación para entrada suave */
+.animate-slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+.animate-slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* === Responsividad === */
 @media (max-width: 768px) {
