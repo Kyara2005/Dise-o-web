@@ -24,3 +24,203 @@ body {
   color: var(--colorCinco);
   line-height: 1.6;
 }
+/* Encabezados */
+h1, h2, h3, h4 {
+  font-family: var(--fuenteSecundaria);
+  color: var(--colorDos);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Enlaces */
+a {
+  color: var(--colorTres);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--colorDos);
+}
+
+/* Botones */
+button {
+  background-color: var(--colorDos);
+  color: var(--colorUno);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: var(--fuentePrincipal);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--colorTres);
+}
+
+/* Formularios */
+form {
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--colorUno);
+  color: var(--colorCuatro);
+  font-family: var(--fuentePrincipal);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--colorCinco);
+}
+
+/* Contenedores principales */
+.header {
+  background-color: var(--colorCuatro);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000000aa;
+  margin-bottom: 2rem;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--colorUno);
+  cursor: pointer;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__list a {
+  font-weight: 500;
+  color: var(--colorUno);
+  transition: color 0.3s ease;
+}
+
+.nav__list a:hover {
+  color: var(--colorDos);
+}
+
+.header__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header__logo h1 {
+  font-family: var(--fuenteSecundaria);
+  font-size: 6rem;
+  color: var(--colorUno);
+}
+
+.logo-highlight {
+  color: var(--colorDos);
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__left {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.header__left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.header__text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--colorUno);
+  text-shadow: 1px 1px 4px #000;
+}
+
+.header__right {
+  flex: 1 1 45%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--colorUno);
+}
+
+.header__right h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__right p a {
+  color: var(--colorDos);
+  text-decoration: none;
+}
+
+.header__right p a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries para móviles */
+@media (max-width: 768px) {
+  .header__main {
+    flex-direction: column;
+  }
+
+  .header__left,
+  .header__right {
+    flex: 1 1 100%;
+  }
+
+  .header__logo h1 {
+    font-size: 3rem;
+  }
+}
+
